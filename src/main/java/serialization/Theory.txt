@@ -1,0 +1,24 @@
+- we may come across a situation where we want to send information from one application to another application
+in different machine
+
+- think of it like a network of computers where we have a producer application and a consumer application
+
+- producer application produces the object and it is travelled over a network line and reaches the consumer application
+so, how does the consumer application receives the object and how does the producer application sends the object
+
+- when the data travels over the network line it is all bytes
+but how do we convert a java object into bytes and send it over network and the consumer application again converts the
+bytes into object to use that inside its application
+
+- The process of converting an object into byte so that it can be sent over a network is called serialization
+
+- The process of converting back the byte into an object is called deserialization
+
+- to use this we have Serializable interface in Java
+
+-----------------------------------------------------------------------------------------------------
+- what if we don't want to allow some properties to be seen by the consumer application
+ and we don't want to serialize it
+
+ - there comes transient keyword
+ if we put it in front of a member variable, we don't want this variable to be serialized or deserialized

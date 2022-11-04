@@ -1,0 +1,3 @@
+- annotations are form of metadata
+- they provide info to the compiler
+
