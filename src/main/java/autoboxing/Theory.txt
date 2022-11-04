@@ -1,0 +1,6 @@
+- autoboxing is the automatic conversion the the Java Compiler makes between the
+primitive types and their corresponding object wrapper classes
+
+- int to Integer (autoboxing)
+
+- Integer to int (unboxing)
