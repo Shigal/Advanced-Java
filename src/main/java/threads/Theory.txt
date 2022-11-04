@@ -1,0 +1,19 @@
+- a process can have multiple threads
+
+- when we start a process there will be at leat one thread attached to it
+
+- within run() method we are going to give whatever logic we want the thread to execute
+
+- start() method is responsible for changing the state of thread from ready to running
+as we are not calling run() method but start() method on the new thread we create
+and whatever in the run() will get executed
+
+- Runnable is a functional interface which has only one method run()
+
+- why we need 2 different ways to create thread
+        -> as java doesn't support multiple inheritance when we already extended the class
+        we can now use Runnable interface
+
+
+- threads are going to run whenever they find idle CPU
+whichever thread gets the CPU executes its logic that is the reason for randomized output
