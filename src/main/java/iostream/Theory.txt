@@ -1,0 +1,27 @@
+- io handling involves taking input from some external source
+- it can be from cmd, a file or an another consumer application, or from a hard disk
+
+- we have an input source and we have an output destination and the way the input source
+sends data to the destination is via streams
+
+- basically it converts the data into zeroes and ones, those 1's and 0's travels as a stream
+
+- whenever we read data we call input stream
+
+- whenever we are writing something we call output stream
+
+- whenever we are reading data from a datasource or writing data to a datasource
+that data can either be simple character string (English characters or UNICODE character) or
+a tabular data in a database or xml file or html or anything
+- that's why java has 2 different ways
+
+- (1) deal with file containing characters we can use character stream
+- (2) if we don't know what kind of data the file contains then use Byte stream
+
+- character stream internally uses byte stream
+
+- character stream is more simpler and faster
+
+- if we use character stream that the file will be read character by character
+
+- if we use byte stream file will be read byte by byte
