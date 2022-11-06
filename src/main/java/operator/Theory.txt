@@ -1,0 +1,7 @@
+- & a bitwise AND operator
+- evaluates both the left and right side of the given expression
+- z = x & y
+
+- &&  a logical AND operator
+- only evaluates the left sides of the given expression.
+- if (y > 1 && y > x)
