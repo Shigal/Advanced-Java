@@ -1,0 +1,6 @@
+- to dynamically place a String we use %s
+
+- to dynamically place an integer value use %d
+
+- %f for float
+
