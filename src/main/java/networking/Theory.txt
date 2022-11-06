@@ -1,0 +1,4 @@
+- java has a package called java.net
+
+- Inet4Address is the class responsible for writing IPV4 addresses
+- Inet6Address is the class responsible for writing IPV6 addresses
