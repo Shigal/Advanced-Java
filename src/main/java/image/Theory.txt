@@ -1,0 +1,4 @@
+- to read a image, write a image
+- java supports any images format GIF, PNG, JPEG
+- basically java converts these format into Java 2D image
+- it creates the byte representation of the image
