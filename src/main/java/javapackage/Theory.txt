@@ -1,0 +1,6 @@
+- package java.lang
+- but we don't explicitly import this package
+
+- package java.util
+- not imported automatically
+- it provides the collection framework
