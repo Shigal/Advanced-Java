@@ -1,0 +1,12 @@
+- java is a strong type checking language at compile type because every object is of a particular type
+- it checks the types of the variables, classes at the compile time
+
+- inspiration for generics comes from the idea of reusing the same code with different inputs
+
+- when it is about generic think of it as we need to develop of login functionality for the user and
+the consumer application, here we are going to have the same kind of functionality. So, instead
+ of repeating the code we can reuse the code twice
+
+----------------------------------------------------------------------------------------------------
+
+- Collection framework is built upon the concept of generics
