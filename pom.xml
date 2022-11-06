@@ -13,4 +13,15 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+<!--    <dependencies>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.postgresql/postgresql &ndash;&gt;-->
+<!--        <dependency>-->
+<!--&lt;!&ndash;            to eliminate the issue java.sql.SQLException: No suitable driver found for jdbc:postgresql://localhost:5432/test&ndash;&gt;-->
+<!--            <groupId>org.postgresql</groupId>-->
+<!--            <artifactId>postgresql</artifactId>-->
+<!--            <version>42.5.0</version>-->
+<!--        </dependency>-->
+
+<!--    </dependencies>-->
+
 </project>

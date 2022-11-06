@@ -1,0 +1,34 @@
+- To connect to a database we need to have the address of the database
+ That is what we call the connection url
+
+- 5432 is the port on which postgresql server runs
+
+- to connect Java program to a database, we need to use java.sql.Connection class
+
+- java is a programming language which doesn't come with its own database
+but we have number of database vendors - mysql, postgresql, microsoft sql, oracle etc
+so, java wants to find out a unique way to connect to all databases.
+
+- java got this interface called jdbc, said whoever wants to make connections to db should follow these specifications
+
+- Hence, JDBC provides the interface with the methods declarations. And the databases(oracle, mysql, etc)
+are supposed to implement that interface and provide their own implementations
+
+-whoever wants to connect to java has to create a driver, that driver contains the implementations of JDBC.
+That's why we downloaded the postgresql driver jar file
+
+-----------------------------------------------------------------------------------------------------------
+
+- we are going to create a table in postgresql GUI within the database test
+ test -> schemas -> public -> Tables -> create it . .
+
+- database connection is one of the costly connection in java programming
+so never forget to close the connection otherwise it will face serious db bottleneck
+
+--------------------------------------------------------------------------------------------------------
+
+- adding the driver
+ file -> project structure -> modules -> dependencies -> select the .jar
+
+this is how we add this in build class path
+ by this way we don't really have to add this in the dependency of the pom file
