@@ -1,0 +1,10 @@
+- metacharacter dot(.) means any character while matching
+
+[abc]  ->  a or b or c
+[^abc] -> any character except a, b & c
+\d     -> digit 0-9
+\D     -> not digit 0-9
+\s     -> whitespace character
+\S     -> non-whitespace character
+\w     -> word character
+\W     -> non-word character
