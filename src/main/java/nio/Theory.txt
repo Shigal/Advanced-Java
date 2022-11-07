@@ -1,0 +1,20 @@
+NIO - Non-blocking Input Output
+
+- as we already have IO package in java why we need nio
+the reason is nio provides the multithreading capability to IO
+
+- basically we don't want to block the thread while it reads a file or writes to a file
+
+- Normally the thread gets locked when we are reading a file or writing to a file until
+the it done writing or reading
+and nio provides an improvement over that
+
+- when we read a file it happens from the channel into the buffer
+
+- when we write to a file it happens from the buffer to the channel
+
+- whenever we want to read, we will have to first open a channel, create a buffer
+and then we can read from the channel into the buffer
+
+- buffer is a container for the data
+- channel is kind of pipeline / connection
