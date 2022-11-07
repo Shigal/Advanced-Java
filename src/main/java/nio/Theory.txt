@@ -18,3 +18,29 @@ and then we can read from the channel into the buffer
 
 - buffer is a container for the data
 - channel is kind of pipeline / connection
+
+-----------------------------------------------------------------------------------
+
+- thread waiting is expensive even if it doesn't consume any CPU time but it utilizes
+about 2Mb of memory for stack variables, local storage and etc.
+
+- IO is Stream oriented blocking IO
+- NIO is buffer oriented non-blocking IO
+
+- Java IO stream oriented means it reads one byte at a time from a stream
+The bytes you read are not cached, so can move back and forth with data from the stream
+To move back and forth the data, we need to cache is firsthand, there comes the buffer
+
+- Java NIO buffer oriented as data is read into the buffer from which it is processed later
+
+- channel represents a connection between the data source and the java program for
+data transfer
+
+- stream oriented IO, we write directly to or read directly from the stream object
+
+- In NIO, data is read into Buffer and written into buffer
+
+- Blocking IO wait for the data to be write or read before returning
+
+- Non blocking IO does not wait for the data to be read or write before returning
+
