@@ -27,7 +27,7 @@ public class StringDemo {
         String s2 = "java";
         String s3 = new String("java");
 
-        // s1, s2 in Java Constant Pool
+        // s1, s2 in Java Constant Pool in the Heap
         // s3 in Java Heap
 
         System.out.println(s1.equals(s2)); // true
