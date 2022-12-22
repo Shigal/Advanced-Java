@@ -1,0 +1,10 @@
+-  spring framework uses Reflection to look at all the classes that you written in your own code
+- also to create objects of those classes, manipulate them and inject into other classes
+- In testing reflection is used to change a private field on which other fields depend on
+- down side of using reflection - create buggy code : what if we changed the method name into something else
+- now our code is working in a completely different way 100% unexpected for some one who makes an innocent change like that
+- another not so good thing about reflection is because it has to figure out and manipulate all the stuff
+- at runtime it cannot do any compile time optimization
+- because of that code that uses reflection is way slower than the code does that same thing without reflection
+- It is best avoiding reflection if you can possibly do something without reflection - faster and robust code
+
