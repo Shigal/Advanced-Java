@@ -18,7 +18,8 @@ public class AnnotationExample {
 
     public static void main(String[] args) throws NoSuchMethodException {
         AnnotationExample example = new AnnotationExample();
-        Method methodVal = example.getClass().getMethod("sayHello"); // this is a way to fetch the method name or type from a class using Reflection API
+        Method methodVal = example.getClass().getMethod("sayHello");
+        // this is a way to fetch the method name or type from a class using Reflection API
         // the above line is going to search the method with this name and if it finds it will return
         // the method in this variable
 
