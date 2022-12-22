@@ -1,0 +1,23 @@
+- when you have large amount of data it is important to have immutable data
+- whatever we do with the values it does not affect the list
+- so create a stream and print the double of it
+- if we have huge data and want to process it can make multiple threads to do it paralleStream()
+- while using parallelStream() don't have to create thread ourselves
+- we want to make 4 -> 8, this can be done with map() method
+- whe we call stream nums.stream() it will return a stream of values
+
+
+- advantage of using stream(),
+ 1. we are not using the existing list but we are creating a stream out of it
+    and executing the operation, even if we change the values of the stream it will not affect the list
+ 2. once you consume the stream you can't reuse it
+    example:
+
+        // foreach will pick the data one by one from stream and print it
+
+        data.forEach(d -> System.out.println(d)); // prints
+        data.forEach(d -> System.out.println(d)); // throws exception "stream has already been operated upon or closed"
+
+    so, when you work on huge project with huge data, always it is better to work on the data and close it
+    so that there won't be any data leakage or you will not have any unused resource opened
+
